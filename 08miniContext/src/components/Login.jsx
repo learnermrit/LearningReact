@@ -12,7 +12,9 @@ function Login() {
 
   const handleSubmit = (e) => {
      e.preventDefault()
-     setUser({username,password})
+     if (username && password) {
+        setUser({ username, password });
+      }
   };
   return (
     <div>
